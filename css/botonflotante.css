@@ -1,0 +1,24 @@
+.boton-flotante{
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 10px;
+    right: 10px;
+    transition: ease 0.3s;
+    list-style-type: none;
+}
+
+.boton-flotante:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton-flotante img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}

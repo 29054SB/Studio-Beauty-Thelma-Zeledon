@@ -1,0 +1,83 @@
+/*Menú lateral*/
+.barra {
+    width: 5%;
+    height:4%;
+    position:absolute;
+    transition: .2s all ;
+    z-index: 1; 
+}
+
+.barra ul{
+    padding:0px;
+    text-align: center; 
+}
+.barra  li{
+    transition:all .3s;
+    list-style: none; 
+}
+
+
+.barra a{
+    text-decoration: none;
+    font-weight: normal;
+    transition: .3s all ;
+    font-size: 0px;
+    padding:0px;
+}
+
+.barra > h2{
+    margin-left: 95px;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    padding:7px;
+    padding-bottom:7px;
+    font-size:0px;   
+}
+
+.barra img{
+    width: 80px;
+    height: 80px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.barra:hover{
+    width: 10%;
+    height: 100vh;
+    background: #7759B2;
+}
+.barra:hover h2{
+    padding:15px;
+    font-size: 20px;
+
+}
+.barra:hover a{ 
+    font-size:18px ;
+    color:white;
+    display: block;
+    padding:20px;
+}
+.barra:hover img{
+    height:0px;
+}
+.barra:hover li{
+    border-top:1px solid #b39de0;
+    width:100%;     
+}
+.barra:hover ul:last-of-type{
+    border-bottom: 1px solid #b39de0;
+}
+
+.barra:hover a:hover{ 
+    font-size: 25px;
+    padding: 30px 0px; 
+    background: #b39de0;  
+}
+
+@media (min-width: 768px){
+    .barra:hover{
+    width: 25%;
+    }
+}
+
